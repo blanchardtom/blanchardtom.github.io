@@ -11,7 +11,7 @@ permalink: "{{ pageData.url }}"
 ---
 
 <main>
-    {% if pageData.title and pageData.title != 'about' %}
+    {% if pageData.title and pageData.url != '/' and pageData.show_title != false %}
     <div class="page-title">
         <h2 class="page-title">{{ pageData.title }}</h2>
         <p class="caption">{{ pageData.caption }}</p>

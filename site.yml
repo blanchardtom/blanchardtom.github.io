@@ -1,14 +1,14 @@
 # Site metadata and configuration
 
 # Greeting message - optional
-greeting: Namaste! I am
+greeting: Hello! It's
 
 
 # Your information
-first_name: You
-middle_name: R.
-last_name: Name
-nickname: YRN
+first_name: Tom
+middle_name: 
+last_name: Blanchard
+nickname: Home
 
 
 # Your image
@@ -16,73 +16,74 @@ icon: /assets/icon.jpg
 
 
 # Site configuration
-default_theme: dark # 'dark' or 'light'
-url: https://iam-tsr.github.io
-baseurl: /tsr-page # leave empty for github action deployment
+default_theme: light # 'dark' or 'light'
+url: https://blanchardtom.github.io
+baseurl: "" # leave empty for root/custom-domain deployment
 width: 900px
 
 
 # Pages configuration
 pages:
-  - title: about
+  - title: Home
     url: / # use '/' for root page
     page: _content/about.html
     css: /_style/about.css
     content: content/about
     metadata: metadata/about.yml
 
-  - title: projects
-    caption: Here are some of my projects.
-    url: /projects/
-    page: _content/projects.html
-    css: /_style/projects.css
-    metadata: metadata/projects.yml
+  # - title: projects
+  #   caption: Here are some of my projects.
+  #   url: /projects/
+  #   page: _content/projects.html
+  #   css: /_style/projects.css
+  #   metadata: metadata/projects.yml
 
-  - title: publications
-    caption: Here are some of my publications.
+  - title: Publications
+    show_title: false
+    caption: Exhaustive list of my publications, including preprints and works in progress. You can also filter by subject using the tags.
     url: /publications/
     page: _content/publications.html
     css: /_style/publications.css
     metadata: metadata/publications.yml
 
-  - title: blog
-    caption: Here are my thoughts and writings on various topics.
-    url: /blog/
-    page: _content/blog.html
-    css: /_style/blog.css
-    content: content/blog
-    metadata: metadata/blog.yml
+  # - title: blog
+  #   caption: Here are my thoughts and writings on various topics.
+  #   url: /blog/
+  #   page: _content/blog.html
+  #   css: /_style/blog.css
+  #   content: content/blog
+  #   metadata: metadata/blog.yml
 
-  - title: gallery
-    caption: Here are some of my designs and artworks.
-    url: /gallery/
-    page: _content/gallery.html
-    css: /_style/gallery.css
-    content: content/gallery
-    metadata: metadata/gallery.yml
+  # - title: gallery
+  #   caption: Here are some of my designs and artworks.
+  #   url: /gallery/
+  #   page: _content/gallery.html
+  #   css: /_style/gallery.css
+  #   content: content/gallery
+  #   metadata: metadata/gallery.yml
 
-  - title: cv
+  - title: CV
     path: /assets/cv.pdf
 
 
 # Contact information
 contacts:
-  - url: mailto:you@example.com
-    icon: fa-solid fa-envelope
-  - url: /tsr-page/ # replace with your profile link
+  # - url: mailto:you@example.com
+  #   icon: fa-solid fa-envelope
+  - url: https://github.com/blanchardtom
     icon: fa-brands fa-github
-  - url: /tsr-page/
+  - url: https://www.linkedin.com/in/tom-blanchard-308056247/
     icon: fa-brands fa-linkedin
-  - url: /tsr-page/
-    icon: fa-brands fa-x-twitter
-  - url: /tsr-page/
-    icon: fa-brands fa-medium
-  - url: /tsr-page/
+  # - url: /
+  #   icon: fa-brands fa-x-twitter
+  # - url: /
+  #   icon: fa-brands fa-medium
+  - url: https://scholar.google.com/citations?user=qjgD4n4AAAAJ
     icon: fa-brands fa-google-scholar
 
 
 # Footer text
-footer_text: "You R. Name. Powered by Eleventy. Inspired by tsr-page theme. Hosted by GitHub Pages. Photos from Unsplash."
+# footer_text: "You R. Name. Powered by Eleventy. Inspired by tsr-page theme. Hosted by GitHub Pages. Photos from Unsplash."
 
 
 # Optional Custom Loading Animation (Replace the color with var(--text-primary) for theme adaptability)

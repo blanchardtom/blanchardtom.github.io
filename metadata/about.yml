@@ -1,42 +1,55 @@
-tagline: "[Work](#). Address. [Contacts](#). Motto. Etc."
+tagline: ""
 
 end-tagline: You can even add a little note about which of these is the best way to reach you.
 
 # Optional sections
 profile:
-  picture: /assets/pfp.png # replace with your profile picture
-  caption: An Indian nuclear theoretical physicist who is widely credited as the "father of the Indian nuclear programme"
+  picture: /assets/pfp.jpeg # replace with your profile picture
+  caption: ""
 
-news:
-  feature-title: news
-  items:
-    - date: "[Aug 1948]"
-      description: "The first Chairman of the [Atomic Energy Commission](#) of India, serving from its establishment on August 10, 1948."
-    - date: "[Oct 1935]"
-      description: "Contributions to the understanding of cosmic rays and electron-positron scattering"
+# news:
+#   feature-title: news
+#   items:
+#     - date: "[Aug 1948]"
+#       description: "The first Chairman of the [Atomic Energy Commission](#) of India, serving from its establishment on August 10, 1948."
+#     - date: "[Oct 1935]"
+#       description: "Contributions to the understanding of cosmic rays and electron-positron scattering"
 
 
 publications:
-  feature-title: selected publications
+  feature-title: Selected publications
   items:
-    - title: "The Scattering of Positrons by Electrons with Exchange on Dirac's Theory of the Positron"
-      date: "Published in 1935"
-      authors: "[Bhabha, H.J.](#), [Carloni Calame](#)"
-      journal: The collision and consequent scattering of one electron by another.
-      tags: { subject: physics, bg_color: skyblue, text_color: black } # replace with your paper's subject and desired tag colors
+    - title: "CaMeLs Can Use Computers Too: System-level Security for Computer Use Agents"
+      date: "Published in 2026"
+      authors: "Hanna Foerster*, [Tom Blanchard](#)*, Kristina Nikolić, Ilia Shumailov, Cheng Zhang, Robert Mullins, Nicolas Papernot, Florian Tramèr, Yiren Zhao"
+      journal: 
+      # tags: { subject: AI Agent Security, bg_color: skyblue, text_color: black } # replace with your paper's subject and desired tag colors
       links: [
-        { name: Scholar, url: /tsr-page/, icon: fa-brands fa-google-scholar }, # replace with your paper link and icon if desired
-        { name: Slides, url: /tsr-page/ },
-        { name: PDF, url: /tsr-page/, icon: fa-solid fa-file-pdf },
+        # { name: Scholar, url: https://scholar.google.ca/citations?view_op=view_citation&hl=fr&user=qjgD4n4AAAAJ&citation_for_view=qjgD4n4AAAAJ:9yKSN-GCB0IC, icon: fa-brands fa-google-scholar }, # replace with your paper link and icon if desired
+        # { name: Slides, url: / },
+        { name: PDF, url: https://arxiv.org/pdf/2601.09923, icon: fa-solid fa-file-pdf },
+      ]
+    - title: "Open llms are necessary for current private adaptations and outperform their closed alternatives"
+      date: "Published in 2024"
+      authors: "Vincent Hanke, [Tom Blanchard](#), Franziska Boenisch, Iyiola E Olatunji, Michael Backes, Adam Dziedzic"
+      journal: Neural Information Processing Systems (NeurIPS) 2024
+      # tags: { subject: AI Privacy, bg_color: skyblue, text_color: black } # replace with your paper's subject and desired tag colors
+      links: [
+        # { name: Scholar, url: https://scholar.google.ca/citations?view_op=view_citation&hl=fr&user=qjgD4n4AAAAJ&citation_for_view=qjgD4n4AAAAJ:9yKSN-GCB0IC, icon: fa-brands fa-google-scholar }, # replace with your paper link and icon if desired
+        # { name: Slides, url: / },
+        { name: PDF, url: https://arxiv.org/pdf/2411.05818v1, icon: fa-solid fa-file-pdf },
+        { name: Website, url: https://sprintml.com/blog/2024-12-10-open-llms/, icon: fa-solid fa-globe }, # replace with your paper link and icon if desired
+        { name: Code, url: https://github.com/sprintml/OpenLLMs, icon: fa-solid fa-code },
+        { name: Video, url: https://www.youtube.com/watch?v=YZh-fOJbyGU&t=1572s, icon: fa-solid fa-video }, # replace with your video link and icon if desired
       ]
 
-blog:
-  feature-title: latest blog posts
-  items:
-    - title: Visionary Scientist
-      date: May 20, 1954
-      link: /tsr-page/ # replace with your blog post link
+# blog:
+#   feature-title: latest blog posts
+#   items:
+#     - title: Visionary Scientist
+#       date: May 20, 1954
+#       link: / # replace with your blog post link
 
-    - title: Nuclear Pioneer
-      date: Aug 10, 1948
-      path: content/blog/my-latest-blog-post.md # replace with your blog post path
+#     - title: Nuclear Pioneer
+#       date: Aug 10, 1948
+#       path: content/blog/my-latest-blog-post.md # replace with your blog post path

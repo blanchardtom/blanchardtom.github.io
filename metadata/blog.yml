@@ -37,11 +37,11 @@ posts:
     date: Mar 5, 2024
     tags: [coding, tips]
     image: https://images.unsplash.com/photo-1707135719639-409915fbc68f?auto=format&fit=crop
-    link: /tsr-page/
+    link: /
     color: { background: "#D9D9D9", text: "black" }
 
   - title: A fourth blog post
     date: Apr 15, 2024
     tags: [lifestyle]
     image: assets/blog/image.jpg # You can also use a local image by providing the path relative to the root of your project. Make sure to place the image in the correct folder.
-    link: /tsr-page/ # You can also use an external link.
+    link: / # You can also use an external link.

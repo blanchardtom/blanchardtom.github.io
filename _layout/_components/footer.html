@@ -1,10 +1,10 @@
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-icons">
-            {% for contact in site.contacts %}
-            <a href="{{ contact.url }}" class="contact-link" target="_blank"><i class="{{ contact.icon }}"></i></a>
-            {% endfor %}
-        </div>
-        <p>&copy; Copyright <span id="current-year"></span> {{ site.footer_text }} </p>
-    </div>
-</footer>
+{% if site.contacts and site.contacts.length > 0 %}
+<aside class="contact-rail" aria-label="Contact links">
+    {% for contact in site.contacts %}
+    <a href="{{ contact.url }}" class="contact-link" target="_blank" rel="noopener noreferrer"
+        aria-label="{{ contact.label | default(contact.url) }}" title="{{ contact.label | default(contact.url) }}">
+        <i class="{{ contact.icon }}"></i>
+    </a>
+    {% endfor %}
+</aside>
+{% endif %}

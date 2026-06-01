@@ -1,34 +1,70 @@
+# publications:
+#   - title: "A Deep Learning Approach to Predicting Stock Prices"
+#     date: "2024"
+#     authors: "[Geoffrey Hinton](#), Yann LeCun"
+#     journal: "Journal of Financial Technology"
+#     tags: { subject: statistical, bg_color: pink, text_color: black }
+#     links: [
+#       { name: Scholar, url: /, icon: fa-brands fa-google-scholar },
+#       { name: Slides, url: / },
+#       { name: PDF, url: /, icon: fa-solid fa-file-pdf },
+#     ]
+
+#   - title: "An Analysis of Machine Learning Algorithms for Image Classification"
+#     date: "2022"
+#     authors: "Yoshua Bengio, [Andrew Ng](#)"
+#     # journal: "International Journal of Computer Vision"
+#     tags: { subject: vision, bg_color: blue, text_color: white }
+#     links: [
+#       { name: Book, url: /, icon: fa-solid fa-book },
+#       { name: Scholar, url: /, icon: fa-brands fa-google-scholar },
+#       { name: Slides, url: / },
+#       { name: PDF, url: /, icon: fa-solid fa-file-pdf },
+#       { name: Video, url: /, icon: fa-solid fa-video },
+#     ]
+
+#   - title: "A Survey of Natural Language Processing Techniques for Sentiment Analysis"
+#     date: "2021"
+#     authors: "Fei-Fei Li, Andrej Karpathy"
+#     journal: "Journal of Artificial Intelligence Research"
+#     # tags: { subject: name_here, bg_color: color_here, text_color: color_here } # Comment this line if you don't want to use tags for this publication. Otherwise, specify the subject and colors for the tag.
+#     links: [
+#       { name: Scholar, url: /, icon: fa-brands fa-google-scholar },
+#       { name: PDF, url: /, icon: fa-solid fa-file-pdf },
+#     ]
+
 publications:
-  - title: "A Deep Learning Approach to Predicting Stock Prices"
-    date: "2024"
-    authors: "[Geoffrey Hinton](#), Yann LeCun"
-    journal: "Journal of Financial Technology"
-    tags: { subject: statistical, bg_color: pink, text_color: black }
+  - title: "CaMeLs Can Use Computers Too: System-level Security for Computer Use Agents"
+    date: "Published in 2026"
+    authors: "Hanna Foerster*, [Tom Blanchard](#)*, Kristina Nikolić, Ilia Shumailov, Cheng Zhang, Robert Mullins, Nicolas Papernot, Florian Tramèr, Yiren Zhao"
+    journal: Preprint on arXiv
+    # tags: { subject: AI Agent Security, bg_color: skyblue, text_color: black } # replace with your paper's subject and desired tag colors
     links: [
-      { name: Scholar, url: /tsr-page/, icon: fa-brands fa-google-scholar },
-      { name: Slides, url: /tsr-page/ },
-      { name: PDF, url: /tsr-page/, icon: fa-solid fa-file-pdf },
+      # { name: Scholar, url: https://scholar.google.ca/citations?view_op=view_citation&hl=fr&user=qjgD4n4AAAAJ&citation_for_view=qjgD4n4AAAAJ:9yKSN-GCB0IC, icon: fa-brands fa-google-scholar }, # replace with your paper link and icon if desired
+      # { name: Slides, url: / },
+      { name: PDF, url: https://arxiv.org/pdf/2601.09923, icon: fa-solid fa-file-pdf },
     ]
-
-  - title: "An Analysis of Machine Learning Algorithms for Image Classification"
-    date: "2022"
-    authors: "Yoshua Bengio, [Andrew Ng](#)"
-    # journal: "International Journal of Computer Vision"
-    tags: { subject: vision, bg_color: blue, text_color: white }
+  - title: "Beautiful Images, Toxic Words: Understanding and Addressing Offensive Text in Generated Images"
+    date: "Published in 2026"
+    authors: "A Kumar*, [T Blanchard](#)*, A Dziedzic, F Boenisch"
+    journal: Conference on the Association of the Advancement of Artificial Intelligence (AAAI) 2026, AI Alignment track
+    # tags: { subject: AI Privacy, bg_color: skyblue, text_color: black } # replace with your paper's subject and desired tag colors
     links: [
-      { name: Book, url: /tsr-page/, icon: fa-solid fa-book },
-      { name: Scholar, url: /tsr-page/, icon: fa-brands fa-google-scholar },
-      { name: Slides, url: /tsr-page/ },
-      { name: PDF, url: /tsr-page/, icon: fa-solid fa-file-pdf },
-      { name: Video, url: /tsr-page/, icon: fa-solid fa-video },
+      # { name: Scholar, url: https://scholar.google.ca/citations?view_op=view_citation&hl=fr&user=qjgD4n4AAAAJ&citation_for_view=qjgD4n4AAAAJ:9yKSN-GCB0IC, icon: fa-brands fa-google-scholar }, # replace with your paper link and icon if desired
+      # { name: Slides, url: / },
+      { name: PDF, url: https://arxiv.org/pdf/2411.05818v1, icon: fa-solid fa-file-pdf },
+      { name: Code, url: https://github.com/sprintml/ToxicBench, icon: fa-solid fa-code },
     ]
-
-  - title: "A Survey of Natural Language Processing Techniques for Sentiment Analysis"
-    date: "2021"
-    authors: "Fei-Fei Li, Andrej Karpathy"
-    journal: "Journal of Artificial Intelligence Research"
-    # tags: { subject: name_here, bg_color: color_here, text_color: color_here } # Comment this line if you don't want to use tags for this publication. Otherwise, specify the subject and colors for the tag.
+  - title: "Open llms are necessary for current private adaptations and outperform their closed alternatives"
+    date: "Published in 2024"
+    authors: "Vincent Hanke, [T Blanchard](#), Franziska Boenisch, Iyiola E Olatunji, Michael Backes, Adam Dziedzic"
+    journal: Conference on Neural Information Processing Systems (NeurIPS) 2024
+    # tags: { subject: AI Privacy, bg_color: skyblue, text_color: black } # replace with your paper's subject and desired tag colors
     links: [
-      { name: Scholar, url: /tsr-page/, icon: fa-brands fa-google-scholar },
-      { name: PDF, url: /tsr-page/, icon: fa-solid fa-file-pdf },
+      # { name: Scholar, url: https://scholar.google.ca/citations?view_op=view_citation&hl=fr&user=qjgD4n4AAAAJ&citation_for_view=qjgD4n4AAAAJ:9yKSN-GCB0IC, icon: fa-brands fa-google-scholar }, # replace with your paper link and icon if desired
+      # { name: Slides, url: / },
+      { name: PDF, url: https://arxiv.org/pdf/2411.05818v1, icon: fa-solid fa-file-pdf },
+      { name: Website, url: https://sprintml.com/blog/2024-12-10-open-llms/, icon: fa-solid fa-globe }, # replace with your paper link and icon if desired
+      { name: Code, url: https://github.com/sprintml/OpenLLMs, icon: fa-solid fa-code },
+      { name: Video, url: https://www.youtube.com/watch?v=YZh-fOJbyGU&t=1572s, icon: fa-solid fa-video }, # replace with your video link and icon if desired
     ]

@@ -1,6 +1,3 @@
-Tell your story to the world, just like your first print [("Hello World")](#). The directories without '_' in the beginning are user editable and can be customized as per your design requirement. For example, `content/`, `metadata/`, `assests/` and `site.yml`. Since the theme is built on Eleventy, which is designed for a Node.js engine. You can start using this template in a single command (follow **Getting Started** in [README.md](https://github.com/iam-tsr/tsr-page?tab=readme-ov-file#getting-started)). I haven't created a YML facility for the color scheme, which I felt was not required since it will give you a better understanding for changing the color scheme through the liquid file - `_style/_components/palette.liquid`.
+I am a Master of Applied Science (MASc) student from the [University of Toronto](https://www.utoronto.ca). I am affiliated with the [Edward S. Rogers Department of Electrical and Computer Engineering](https://www.ece.utoronto.ca). I am advised by [Nicolas Papernot](https://www.papernot.fr). I am an upcoming PhD student at the [University of Oxford](https://www.ox.ac.uk), advised by [Yarin Gal](https://www.cs.ox.ac.uk/people/yarin.gal/website/). 
 
-Useful resources where can get icons and loader:
-
-- Icons - [Font Awesome](https://fontawesome.com/)
-- Loader - [CSS Loader](https://css-loaders.com/)
+I am interested in solutions to prevent AI Systems from going wild. For now, this translates to evaluating current risks that are new and specific to the development of AI Agents, and providing new frameworks for using those systems safely, often taking inspiration from the computer security literature.
