@@ -1,0 +1,105 @@
+---
+permalink: /_style/{{ page.fileSlug }}.css
+---
+
+@import url('_components/global.css');
+@import url('_components/palette.css');
+
+.banner {
+    width: 100%;
+    max-height: blog.adjustment.banner.absolute_dim;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.banner img {
+    width: {{ blog.adjustment.banner.width }};
+    height: {{ blog.adjustment.banner.height }};
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.post-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.blog-post {
+    background-color: var(--post-background-color, var(--bg-secondary));
+    height: {{ blog.adjustment.post.absolute_dim }};
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.post-image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.post-image img {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Move focus: Left/Right (%) and Up/Down (%) */
+    object-position: {{ blog.adjustment.post.width }} {{ blog.adjustment.post.height }};
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.post-image:hover img {
+    transform: scale(1.05);
+}
+
+.post-content {
+    padding: 1rem 0.75rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tags {
+    background-color: color-mix(in srgb, var(--post-background-color, var(--bg-primary)) 80%, black);
+    color: var(--post-text-color, var(--text-secondary));
+}
+
+.post-title {
+    font-size: var(--h3);
+    font-weight: var(--medium);
+    color: var(--post-text-color, var(--text-primary));
+}
+
+.post-date {
+    color: var(--post-text-color, var(--text-primary));
+    font-size: var(--small);
+    padding-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .post-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner {
+        max-height: calc(150px - 50px);
+    }
+
+    .banner img {
+        height: calc(150px - 50px);
+    }
+}
+
+@media (max-width: 674px) {
+    .post-card {
+        grid-template-columns: 1fr;
+    }
+}

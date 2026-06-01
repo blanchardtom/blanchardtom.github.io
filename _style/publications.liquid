@@ -1,0 +1,57 @@
+---
+permalink: /_style/{{ page.fileSlug }}.css
+---
+
+@import url('_components/global.css');
+@import url('_components/palette.css');
+
+.publication-card {
+    padding: 2rem 0;
+}
+
+.publication-title {
+    font-size: var(--h4);
+    font-weight: var(--medium);
+}
+
+.publication-card-meta{
+    display: flex;
+    gap: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.publication-card-meta {
+    align-items: flex-start;
+}
+
+.publication-tag {
+    background-color: var(--publication-tag-bg, var(--accent-color));
+    color: var(--publication-tag-color, var(--text-primary));
+    font-size: var(--very-small);
+    font-weight: var(--dark);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.7rem;
+    border-radius: 2px;
+    font-family: "Cousine", monospace;
+}
+
+.publication-authors a:hover{
+    text-decoration: underline;
+}
+
+.publication-date {
+    font-size: var(--h3);
+    font-weight: var(--normal);
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    text-transform: lowercase;
+    text-align: right;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.journal {
+    font-style: italic;
+}

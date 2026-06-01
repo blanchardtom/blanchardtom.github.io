@@ -1,0 +1,21 @@
+<header>
+    <nav>
+        <a href="{{ site.baseurl }}{{ site.pages[0].url }}" class="logo" data-link>{{ site.nickname }}</a>
+        <button class="hamburger" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <div class="nav-links">
+            {% for page in site.pages %}
+            {% set pageLink = page.url | default(page.path) %}
+            {% if 'http' in pageLink or '.pdf' in pageLink %}
+            <a href="{{ site.baseurl }}{{ pageLink }}" class="nav-link" target="_blank">{{ page.title }}</a>
+            {% else %}
+            <a href="{{ site.baseurl }}{{ pageLink }}" class="nav-link" data-link>{{ page.title }}</a>
+            {% endif %}
+            {% endfor %}
+            <i id="theme-toggle" class="fa-solid fa-sun theme-icon"></i>
+        </div>
+    </nav>
+</header>

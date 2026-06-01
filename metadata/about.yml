@@ -1,0 +1,42 @@
+tagline: "[Work](#). Address. [Contacts](#). Motto. Etc."
+
+end-tagline: You can even add a little note about which of these is the best way to reach you.
+
+# Optional sections
+profile:
+  picture: /assets/pfp.png # replace with your profile picture
+  caption: An Indian nuclear theoretical physicist who is widely credited as the "father of the Indian nuclear programme"
+
+news:
+  feature-title: news
+  items:
+    - date: "[Aug 1948]"
+      description: "The first Chairman of the [Atomic Energy Commission](#) of India, serving from its establishment on August 10, 1948."
+    - date: "[Oct 1935]"
+      description: "Contributions to the understanding of cosmic rays and electron-positron scattering"
+
+
+publications:
+  feature-title: selected publications
+  items:
+    - title: "The Scattering of Positrons by Electrons with Exchange on Dirac's Theory of the Positron"
+      date: "Published in 1935"
+      authors: "[Bhabha, H.J.](#), [Carloni Calame](#)"
+      journal: The collision and consequent scattering of one electron by another.
+      tags: { subject: physics, bg_color: skyblue, text_color: black } # replace with your paper's subject and desired tag colors
+      links: [
+        { name: Scholar, url: /tsr-page/, icon: fa-brands fa-google-scholar }, # replace with your paper link and icon if desired
+        { name: Slides, url: /tsr-page/ },
+        { name: PDF, url: /tsr-page/, icon: fa-solid fa-file-pdf },
+      ]
+
+blog:
+  feature-title: latest blog posts
+  items:
+    - title: Visionary Scientist
+      date: May 20, 1954
+      link: /tsr-page/ # replace with your blog post link
+
+    - title: Nuclear Pioneer
+      date: Aug 10, 1948
+      path: content/blog/my-latest-blog-post.md # replace with your blog post path

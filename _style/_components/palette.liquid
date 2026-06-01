@@ -1,0 +1,46 @@
+---
+permalink: /_style/_components/palette.css
+---
+
+/* Color Palettes */
+:root {
+    --bg-primary: #141414; /* Main background color */
+    --bg-secondary: #1E1E1E; /* Secondary background color (i.e. footer) */
+    --text-primary: #e6ebe5;
+    --text-secondary: #9caf9e; /* A greyer version of accent color */
+    --border-color: color-mix(in srgb, var(--bg-primary), white 20%);
+    --accent-color: #09A85A;
+    --bg-code: rgba(9, 168, 90, 0.2); /* A lighter version color of accent color */
+}
+
+[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f2f2f2;
+    --text-primary: #272211;
+    --text-secondary: #80786b;
+    --border-color: color-mix(in srgb, var(--bg-primary), #141414 20%);
+    --accent-color: #ff8000;
+    --bg-code: rgba(255, 128, 0, 0.2);
+}
+
+:root {
+    /* Typography */
+    --h1: 3rem; /* Super title font size (i.e. You R. Name)*/
+    --h2: 2rem; /* Section title font size */
+    --h3: 1.5rem; /* Sub section title font size */
+    --h4: 1.2rem; /* Card title font size */
+    --regular: 1rem;
+    --small: 0.9rem;
+    --very-small: 0.8rem; /* Used for tags font size */
+
+    /* Font Weight */
+    --normal: 300;
+    --medium: 400;
+    --bold: 500;
+    --dark: 700;
+
+    /* Contact Size */
+    --big-icon: 3rem; /* Desktop footer icons */
+    --medium-icon: 2.5rem; /* Mobile footer icons */
+    --small-icon: 1.2rem; /* Normal icons */
+}

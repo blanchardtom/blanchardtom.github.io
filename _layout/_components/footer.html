@@ -1,0 +1,10 @@
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-icons">
+            {% for contact in site.contacts %}
+            <a href="{{ contact.url }}" class="contact-link" target="_blank"><i class="{{ contact.icon }}"></i></a>
+            {% endfor %}
+        </div>
+        <p>&copy; Copyright <span id="current-year"></span> {{ site.footer_text }} </p>
+    </div>
+</footer>

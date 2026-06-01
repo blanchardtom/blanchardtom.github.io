@@ -1,0 +1,55 @@
+<div class="banner">
+    {% if blog.banner and blog.banner.image %}
+    <img src="{{ blog.banner.image }}" alt="{{ blog.banner.alt }}" loading="lazy" height="{{ blog.banner.absolute_dim }}"/>
+    {% endif %}
+</div>
+
+<div class="post-card">
+    {% if blog.posts and blog.posts.size > 0 %}
+    {% for post in blog.posts %}
+    {% if post.external %}
+    {% if post.color.background %}
+    <a class="blog-post" href="{{ post.link }}" target="_blank" rel="noopener noreferrer"
+        style="--post-background-color: {{ post.color.background }};">
+        {% else %}
+        <a class="blog-post" href="{{ post.link }}" target="_blank" rel="noopener noreferrer">
+            {% endif %}
+            {% else %}
+            {% if post.color.background %}
+            <a class="blog-post" href="{{ site.baseurl }}{{ post.url }}"
+                style="--post-background-color: {{ post.color.background }};">
+                {% else %}
+                <a class="blog-post" href="{{ site.baseurl }}{{ post.url }}">
+                    {% endif %}
+                    {% endif %}
+                    <div class="post-image">
+                        {% if post.image %}
+                        {% if post.imageLocal %}
+                        <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" loading="lazy" height="{{ blog.post.absolute_dim }}"/>
+                        {% else %}
+                        <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy" height="{{ blog.post.absolute_dim }}"/>
+                        {% endif %}
+                        {% else %}
+                        <div class="placeholder-image">No Image</div>
+                        {% endif %}
+                    </div>
+                    <div class="post-content"{% if post.color.text %} style="--post-text-color: {{ post.color.text }};"{% endif %}>
+                        <h3 class="post-title">{{ post.title }}</h3>
+                        <p class="post-date">{{ post.date }}</p>
+                        {% if post.tags and post.tags.size > 0 %}
+                        <div class="card-tags">
+                            {% for tags in post.tags %}
+                            <span class="tags">{{ tags }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </a>
+                {% endfor %}
+                {% else %}
+                <p>No blog posts available at the moment. Please check back later!</p>
+                {% endif %}
+            </a>
+        </a>
+    </a>
+</div>

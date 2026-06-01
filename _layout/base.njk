@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "_components/head.njk" %}
+  <body>
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <img src="" alt="" id="lightboxImg" loading="lazy">
+    </div>
+
+    <div id="loader-wrapper">
+      {% if site.loader %}
+        {{ site.loader.html | safe }}
+      {% else %}
+        <div class="loader"></div>
+      {% endif %}
+    </div>
+    {% include "_components/navbar.html" %}
+    {{ content | safe }}
+    {% include "_components/footer.html" %}
+  </body>
+
+  <script src="{{ site.baseurl }}/_scripts/_components/theme.js"></script>
+  <script src="{{ site.baseurl }}/_scripts/_components/scroll_top.js"></script>
+  <script src="{{ site.baseurl }}/_scripts/_components/progress_bar.js"></script>
+  <script src="{{ site.baseurl }}/_scripts/_components/hamburger.js"></script>
+  <script src="{{ site.baseurl }}/_scripts/_components/gallery.js"></script>
+  <script src="{{ site.baseurl }}/_scripts/global.js"></script>
+</html>

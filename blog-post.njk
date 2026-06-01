@@ -1,0 +1,13 @@
+---
+pagination:
+  data: blogInternalPosts
+  size: 1
+  alias: post
+permalink: "/blog/{{ post.slug }}/"
+layout: base.njk
+eleventyComputed:
+  title: "{{ post.title }}"
+  css: "/_style/_sub-pages/blog-post.css"
+---
+
+{% include "_content/_sub-pages/blog-post.html" %}

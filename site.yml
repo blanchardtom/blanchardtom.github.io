@@ -1,0 +1,105 @@
+# Site metadata and configuration
+
+# Greeting message - optional
+greeting: Namaste! I am
+
+
+# Your information
+first_name: You
+middle_name: R.
+last_name: Name
+nickname: YRN
+
+
+# Your image
+icon: /assets/icon.jpg
+
+
+# Site configuration
+default_theme: dark # 'dark' or 'light'
+url: https://iam-tsr.github.io
+baseurl: /tsr-page # leave empty for github action deployment
+width: 900px
+
+
+# Pages configuration
+pages:
+  - title: about
+    url: / # use '/' for root page
+    page: _content/about.html
+    css: /_style/about.css
+    content: content/about
+    metadata: metadata/about.yml
+
+  - title: projects
+    caption: Here are some of my projects.
+    url: /projects/
+    page: _content/projects.html
+    css: /_style/projects.css
+    metadata: metadata/projects.yml
+
+  - title: publications
+    caption: Here are some of my publications.
+    url: /publications/
+    page: _content/publications.html
+    css: /_style/publications.css
+    metadata: metadata/publications.yml
+
+  - title: blog
+    caption: Here are my thoughts and writings on various topics.
+    url: /blog/
+    page: _content/blog.html
+    css: /_style/blog.css
+    content: content/blog
+    metadata: metadata/blog.yml
+
+  - title: gallery
+    caption: Here are some of my designs and artworks.
+    url: /gallery/
+    page: _content/gallery.html
+    css: /_style/gallery.css
+    content: content/gallery
+    metadata: metadata/gallery.yml
+
+  - title: cv
+    path: /assets/cv.pdf
+
+
+# Contact information
+contacts:
+  - url: mailto:you@example.com
+    icon: fa-solid fa-envelope
+  - url: /tsr-page/ # replace with your profile link
+    icon: fa-brands fa-github
+  - url: /tsr-page/
+    icon: fa-brands fa-linkedin
+  - url: /tsr-page/
+    icon: fa-brands fa-x-twitter
+  - url: /tsr-page/
+    icon: fa-brands fa-medium
+  - url: /tsr-page/
+    icon: fa-brands fa-google-scholar
+
+
+# Footer text
+footer_text: "You R. Name. Powered by Eleventy. Inspired by tsr-page theme. Hosted by GitHub Pages. Photos from Unsplash."
+
+
+# Optional Custom Loading Animation (Replace the color with var(--text-primary) for theme adaptability)
+loader:
+  html: '<div class="loader"></div>'
+  css: |
+    .loader {
+      width: 60px;
+      aspect-ratio: 1;
+      --g: conic-gradient(from -90deg at 10px 10px, var(--text-primary) 90deg, #0000 0);
+      background: 
+        var(--g),
+        var(--g) 10px 10px,
+        var(--g) 20px 20px;
+      background-size: 50% 50%;
+      animation: l15 1s infinite;
+    }
+    @keyframes l15 {
+        90%,100% { background-position: -30px 30px, -20px 40px, -10px 50px } 
+    }

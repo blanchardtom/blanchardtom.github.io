@@ -1,0 +1,19 @@
+<main>
+    <div class="title">
+        <h2 class="blog-post-title">{{ post.title }}</h2>
+    </div>
+
+    <div class="content">
+        {{ post.content | safe }}
+    </div>
+
+    <div class="blog-post-tags">
+        {% if post.tags and post.tags.length > 0 %}
+        <div class="card-tags">
+            {% for tags in post.tags %}
+            <span class="tags">{{ tags }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</main>
