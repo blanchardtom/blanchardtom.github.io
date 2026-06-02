@@ -1,6 +1,24 @@
 <head>
+    {% set person_name = site.first_name ~ " " ~ site.last_name %}
+    {% if title == "Home" or title == site.nickname %}
+    {% set page_title = person_name %}
+    {% else %}
+    {% set page_title = title ~ " | " ~ person_name %}
+    {% endif %}
+    {% set page_description = site.description | default(person_name) %}
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ page_description }}">
+    <meta name="author" content="{{ person_name }}">
+    <meta property="og:title" content="{{ page_title }}">
+    <meta property="og:description" content="{{ page_description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.icon }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page_title }}">
+    <meta name="twitter:description" content="{{ page_description }}">
 
     {% if 'assets' in site.icon %}
     <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}{{ site.icon }}">
@@ -8,7 +26,7 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>">
     {% endif %}
 
-    <title>{{ title }}</title>
+    <title>{{ page_title }}</title>
     {% if css %}
     <link rel="stylesheet" href="{{ site.baseurl }}{{ css }}">
     {% endif %}
